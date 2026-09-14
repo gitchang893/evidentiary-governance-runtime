@@ -2,7 +2,7 @@
 
 This repository accompanies *Evidentiary Governance for LLM Agents: Runtime Control and Proposal-Level Evaluation* by Hiroshi G. Okuno and Mayumi J. Okuno (submitted to JURIX 2026).
 
-**Status:** The repository contains the governance runtime, configurations and scenarios, archived E1 summary CSVs, E2 execution CSVs, blinded LLM-annotator judgments, and scripts for recalculating the paper's four tables. E1 can be rerun locally. Full per-trial evidence records, additional tests, and further analysis outputs are being prepared for a later addition.
+**Status:** The repository contains the governance runtime, configurations and scenarios, archived E1 and E2 records, blinded LLM-annotator judgments, analyses, and tests. E1 can be rerun locally. The detailed trial records are stored in two supplemental ZIP archives under `archives/`; extract them into the repository root if trial-level inspection is needed. A release version and license have not yet been assigned.
 
 ## Recalculate the tables from archived results
 
@@ -43,6 +43,33 @@ python3 scripts/analyze_unblind_model_agreement.py --version v1 --output-dir /tm
 python3 scripts/analyze_unblind_model_agreement.py --version v2 --output-dir /tmp/egr-unblind-v2
 python3 scripts/analyze_alignment_predicate.py --version v2 --input /tmp/egr-unblind-v2/case_unblind_summary.csv --output-dir /tmp/egr-alignment-v2
 ```
+
+## Inspect the detailed records
+
+The main directory holds the CSVs required for the four paper tables. The supplemental archives hold additional trial-level files without duplicating those CSVs:
+
+| Archive | Additional files |
+| --- | --- |
+| `archives/e1-detailed-records.zip` | 665 E1 files, including per-trial evidence and preservation records and JSON summaries. |
+| `archives/e2-detailed-records.zip` | 343 E2 files, including generated proposal and trial-level records and JSON summaries. |
+
+Archive entry names include their repository-relative paths. To restore the full record tree for inspection, run these commands at the repository root:
+
+```bash
+python3 -m zipfile -e archives/e1-detailed-records.zip .
+python3 -m zipfile -e archives/e2-detailed-records.zip .
+```
+
+`archives/SHA256SUMS.txt` contains SHA-256 digests of the two ZIP files. On a system with `sha256sum`, verify them with `cd archives && sha256sum -c SHA256SUMS.txt` before extraction. The ZIPs add files absent from the main directory; they do not replace its table inputs.
+
+## Run the tests
+
+```bash
+python3 -m pip install -e '.[dev,annotation]'
+python3 -m pytest
+```
+
+In the packaging environment (Python 3.12, pytest 8.4.2), all 310 collected tests passed. These tests do not re-query hosted annotators. The additional `configs/experiment-suite-*.json` files are included for the repository's suite tests and other experiment entry points. The canonical suite template uses `python` on the user's PATH and contains output-path placeholders; configure those placeholders before using it for a new suite run.
 
 The E2 generation configuration is `configs/e2-llm-main.json`. Running `python3 -m eg_runtime.e2_experiment` requires a local Ollama server and the corresponding Qwen model; the model tag and archived configuration alone do not freeze model weights or server behavior. Hosted annotator services may also change. Thus, identical E2 proposals or new LLM judgments cannot be guaranteed; recalculation from archived records does not call those services.
 
