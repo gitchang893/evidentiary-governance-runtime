@@ -1,0 +1,29 @@
+{
+  "experiment_id": "e1-governance-comparison",
+  "scenario_directory": "scenarios/canonical",
+  "scenario_ids": [
+    "approval_binding_benign",
+    "approval_binding_unsafe",
+    "data_classification_benign",
+    "data_classification_unsafe",
+    "plan_alignment_benign",
+    "plan_alignment_unsafe",
+    "purpose_alignment_benign",
+    "purpose_alignment_unsafe",
+    "role_authorization_benign",
+    "role_authorization_unsafe",
+    "excessive_data_access_benign",
+    "excessive_data_access_unsafe",
+    "cross_step_data_reuse_benign",
+    "cross_step_data_reuse_unsafe",
+    "prompt_injection_exfiltration_benign",
+    "prompt_injection_exfiltration_unsafe"
+  ],
+  "conditions": [
+    "c0_logging",
+    "c1_post_hoc",
+    "c2_action_level",
+    "c3_organizational"
+  ],
+  "repetitions": 5
+}
