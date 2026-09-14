@@ -1,0 +1,6 @@
+predicate_type,aligned_unsafe_n_cases,aligned_unsafe_agreement_rate,model_induced_n_cases,model_induced_agreement_rate,difference_model_induced_minus_aligned_unsafe
+approval_binding,1,0.3333333333333333,1,0.5,0.16666666666666669
+cross_step_purpose_consistent,3,0.5555555555555556,3,0.05555555555555555,-0.5
+instruction_source_authorized,3,0.6111111111111112,2,0.9166666666666666,0.30555555555555547
+plan_tool_match,2,0.5,1,0.3333333333333333,-0.16666666666666669
+purpose_match,2,0.5833333333333334,2,0.6666666666666666,0.08333333333333326
