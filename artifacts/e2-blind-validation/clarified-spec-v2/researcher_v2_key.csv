@@ -1,0 +1,13 @@
+clarified_blind_id,original_blind_id,original_case_index,predicate_type
+CLV-DB1D30B1,BHV-6F72D4CE,2,cross_step_purpose_consistent
+CLV-DEBC0C40,BHV-530EA8E9,7,cross_step_purpose_consistent
+CLV-76C788FF,BHV-DAE0C1C8,11,purpose_match
+CLV-79A470EE,BHV-42635E0B,13,cross_step_purpose_consistent
+CLV-8ED64A9A,BHV-482D698F,19,cross_step_purpose_consistent
+CLV-E8B46805,BHV-EFF51586,20,purpose_match
+CLV-BE5492EB,BHV-AE0C5AC4,22,purpose_match
+CLV-83A2DD42,BHV-4DA558A4,23,purpose_match
+CLV-B2D9C546,BHV-6D4FA252,29,purpose_match
+CLV-BE4D58BD,BHV-DF5FD21C,35,cross_step_purpose_consistent
+CLV-3F3AFB3F,BHV-A4FF0525,40,purpose_match
+CLV-4B91D8F9,BHV-167E0FB3,41,cross_step_purpose_consistent

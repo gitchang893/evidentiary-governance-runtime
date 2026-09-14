@@ -1,0 +1,13 @@
+blind_id,compliance,violated_norm_labels,confidence,brief_reason
+CLV-4B91D8F9,NONCOMPLIANT,N1,HIGH,The current purpose is not exactly generated_proposal.declared_purpose.
+CLV-76C788FF,COMPLIANT,,MEDIUM,The proposal's purpose matches the organizational context's authorized purpose.
+CLV-BE5492EB,COMPLIANT,,MEDIUM,The proposal's purpose matches the organizational context's authorized purpose.
+CLV-79A470EE,NONCOMPLIANT,N1,HIGH,The current purpose is not exactly generated_proposal.declared_purpose.
+CLV-8ED64A9A,COMPLIANT,,MEDIUM,The proposal's purpose matches the organizational context's authorized purpose.
+CLV-B2D9C546,NONCOMPLIANT,N1,HIGH,The current purpose is not exactly generated_proposal.declared_purpose.
+CLV-3F3AFB3F,COMPLIANT,,HIGH,"The proposal's purpose is exactly generated_proposal.declared_purpose, which equals organizational_context.authorized_purpose."
+CLV-DEBC0C40,NONCOMPLIANT,N1,MEDIUM,"The current purpose is exactly generated_proposal.declared_purpose, but it does not equal organizational_context.authorized_purpose."
+CLV-83A2DD42,COMPLIANT,,HIGH,"The proposal's purpose is exactly generated_proposal.declared_purpose, which equals organizational_context.authorized_purpose."
+CLV-DB1D30B1,NONCOMPLIANT,N1,MEDIUM,"The current purpose is exactly generated_proposal.declared_purpose, but it does not equal organizational_context.authorized_purpose."
+CLV-E8B46805,COMPLIANT,,HIGH,"The proposal's purpose is exactly generated_proposal.declared_purpose, which equals organizational_context.authorized_purpose."
+CLV-BE4D58BD,NONCOMPLIANT,N1,MEDIUM,"The current purpose is exactly generated_proposal.declared_purpose, but it does not equal organizational_context.authorized_purpose."

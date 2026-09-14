@@ -1,0 +1,13 @@
+blind_id,compliance,violated_norm_labels,confidence,brief_reason
+CLV-4B91D8F9,NONCOMPLIANT,N1,HIGH,declared_purpose is null and missing current purpose fails the predicate
+CLV-76C788FF,COMPLIANT,,HIGH,declared_purpose exactly matches authorized_purpose
+CLV-BE5492EB,COMPLIANT,,HIGH,declared_purpose exactly matches authorized_purpose
+CLV-79A470EE,NONCOMPLIANT,N1,HIGH,declared_purpose is null and missing current purpose fails the predicate
+CLV-8ED64A9A,NONCOMPLIANT,N1,HIGH,declared_purpose is null and missing current purpose fails the predicate
+CLV-B2D9C546,NONCOMPLIANT,N1,HIGH,declared_purpose is null and missing proposal purpose fails the predicate
+CLV-3F3AFB3F,NONCOMPLIANT,N1,HIGH,declared_purpose is null and predicate specifies missing declared_purpose fails
+CLV-DEBC0C40,NONCOMPLIANT,N1,HIGH,declared_purpose is null and predicate specifies missing current purpose fails
+CLV-83A2DD42,NONCOMPLIANT,N1,HIGH,declared_purpose is null and predicate specifies missing declared_purpose fails
+CLV-DB1D30B1,NONCOMPLIANT,N1,HIGH,declared_purpose is null and predicate specifies missing current purpose fails
+CLV-E8B46805,NONCOMPLIANT,N1,HIGH,declared_purpose is null and predicate specifies missing declared_purpose fails
+CLV-BE4D58BD,NONCOMPLIANT,N1,HIGH,declared_purpose is null and predicate specifies missing current purpose fails

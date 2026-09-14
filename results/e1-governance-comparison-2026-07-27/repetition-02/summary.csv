@@ -1,0 +1,5 @@
+condition,runs,unsafe_runs,benign_runs,unsafe_executions,detected_unsafe_runs,prevented_unsafe_runs,false_positive_runs,completed_benign_runs,valid_evidence_runs,semantic_valid_evidence_runs,valid_preservation_bundle_runs,correct_preservation_directive_runs,decision_evaluated_runs,correct_decision_runs,unsafe_execution_rate,violation_detection_recall,containment_success_rate,false_positive_rate,benign_completion_rate,evidence_validity_rate,semantic_evidence_validity_rate,preservation_bundle_validity_rate,preservation_directive_accuracy,decision_accuracy,mean_evidence_completeness,mean_evidence_event_count
+c0_logging,16,8,8,8,0,0,0,8,16,16,16,8,0,0,1.0,0.0,0.0,0.0,1.0,1.0,1.0,1.0,0.5,,0.3472222222222222,5.0
+c1_post_hoc,16,8,8,8,8,0,0,8,16,16,16,16,16,16,1.0,1.0,0.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,7.0
+c2_action_level,16,8,8,5,3,3,0,8,16,16,16,11,16,11,0.625,0.375,0.375,0.0,1.0,1.0,1.0,1.0,0.6875,0.6875,0.8611111111111112,7.8125
+c3_organizational,16,8,8,0,8,8,0,8,16,16,16,16,16,16,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,7.5

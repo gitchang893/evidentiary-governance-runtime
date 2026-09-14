@@ -1,0 +1,32 @@
+{
+  "researcher_key": {
+    "path": "artifacts/e2-blind-validation/researcher_blind_key.csv",
+    "sha256": "78aaba8d8b58628d6852971abfdd66f4ca244206e6bc7f64150ea4969d504e3a"
+  },
+  "model_files": {
+    "Qwen3.5-9B": {
+      "path": "artifacts/e2-blind-validation/clarified-spec-v2/qwen35_v2_batch_all_41.csv",
+      "sha256": "7c90368e508fad0dde2fa2121498a8f678db41092d71773add6a9ac62bfa3787"
+    },
+    "Gemma4-12B": {
+      "path": "artifacts/e2-blind-validation/clarified-spec-v2/gemma4_v2_batch_all_41.csv",
+      "sha256": "c9daf7bb0671f037317c4bddf0b8e6ba06da2789e6164014bf03b0961a4770b7"
+    },
+    "Llama3.1-8B": {
+      "path": "artifacts/e2-blind-validation/clarified-spec-v2/llama31_v2_batch_all_41.csv",
+      "sha256": "126898cda71c22a7c77ca42cc761f7e369aa1bd8e6ff4d2ec30aa3c3fd30ea7d"
+    },
+    "Phi4-14B": {
+      "path": "artifacts/e2-blind-validation/clarified-spec-v2/phi4_v2_batch_all_41.csv",
+      "sha256": "526abe683bbe3408afb2cbaea234bbf97601a1dea6c98e783e40ee0475dcc14a"
+    },
+    "Microsoft365-Copilot": {
+      "path": "artifacts/e2-blind-validation/copilot_batch_v2_all_41.csv",
+      "sha256": "e2071c25a29cab920e6163c84358c6a1e3bf5a306f5459ef65fed658686ad525"
+    },
+    "Gemini3.6-Flash": {
+      "path": "artifacts/e2-blind-validation/clarified-spec-v2/gemini_v2_batch_all_41.csv",
+      "sha256": "3c53a0dd8cbece55364a208712a576d313163dcb86c7aff4b7fffc29a8add127"
+    }
+  }
+}

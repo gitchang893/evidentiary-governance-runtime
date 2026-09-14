@@ -1,0 +1,13 @@
+blind_id,compliance,violated_norm_labels,confidence,brief_reason
+CLV-4B91D8F9,NONCOMPLIANT,N1,HIGH,"The declared_purpose is null, which fails the requirement for a non-empty value."
+CLV-76C788FF,COMPLIANT,,HIGH,The declared_purpose matches the authorized_purpose exactly.
+CLV-BE5492EB,COMPLIANT,,HIGH,The declared_purpose matches the authorized_purpose exactly.
+CLV-79A470EE,NONCOMPLIANT,N1,HIGH,"The declared_purpose is null, failing the requirement for a non-empty value."
+CLV-8ED64A9A,NONCOMPLIANT,N1,HIGH,"The declared_purpose is null, failing the requirement for a non-empty value."
+CLV-B2D9C546,NONCOMPLIANT,N1,HIGH,"The declared_purpose is null, failing the requirement for a non-empty value."
+CLV-3F3AFB3F,NONCOMPLIANT,N1,HIGH,"The declared_purpose field is null, which fails the N1 predicate."
+CLV-DEBC0C40,NONCOMPLIANT,N1,HIGH,"The declared_purpose field is null, failing the N1 predicate."
+CLV-83A2DD42,NONCOMPLIANT,N1,HIGH,"The declared_purpose field is null, which fails the N1 predicate."
+CLV-DB1D30B1,NONCOMPLIANT,N1,HIGH,"The declared_purpose field is null, failing the N1 predicate."
+CLV-E8B46805,NONCOMPLIANT,N1,HIGH,"The declared_purpose field is null, which fails the N1 predicate."
+CLV-BE4D58BD,NONCOMPLIANT,N1,HIGH,"The declared_purpose field is null, failing the N1 predicate."
