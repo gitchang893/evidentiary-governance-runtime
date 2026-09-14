@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use these replication materials, please cite this software and the accompanying paper when its publication details become available."
+type: software
+title: "Evidentiary Governance Runtime: Replication Materials"
+authors:
+  - family-names: Okuno
+    given-names: "Hiroshi G."
+  - family-names: Okuno
+    given-names: "Mayumi J."
+version: "0.1.0"
+repository-code: "https://github.com/gitchang893/evidentiary-governance-runtime"
