@@ -1,0 +1,7 @@
+model,n,raw_agreement_n,raw_agreement_rate,cohen_kappa,uncertain_n,decisive_n,decisive_agreement_n,decisive_agreement_rate,runtime_noncompliant_n,model_noncompliant_on_runtime_noncompliant_n,model_noncompliant_on_runtime_noncompliant_rate,model_compliant_on_runtime_noncompliant_n,model_uncertain_on_runtime_noncompliant_n,runtime_compliant_n,model_compliant_on_runtime_compliant_n,model_compliant_on_runtime_compliant_rate,model_noncompliant_on_runtime_compliant_n,model_uncertain_on_runtime_compliant_n,jointly_noncompliant_n,runtime_norm_basis_exact_n,runtime_norm_basis_exact_rate,runtime_norm_basis_mean_jaccard
+Qwen3.5-9B,41,21,0.5121951219512195,0.15811088295687886,6,35,21,0.6,24,11,0.4583333333333333,9,4,17,10,0.5882352941176471,5,2,11,11,1.0,1.0
+Gemma4-12B,41,29,0.7073170731707317,0.45333333333333325,0,41,29,0.7073170731707317,24,12,0.5,12,0,17,17,1.0,0,0,12,12,1.0,1.0
+Llama3.1-8B,41,21,0.5121951219512195,0.044289044289044364,0,41,21,0.5121951219512195,24,11,0.4583333333333333,13,0,17,10,0.5882352941176471,7,0,11,11,1.0,1.0
+Phi4-14B,41,27,0.6585365853658537,0.3310023310023311,0,41,27,0.6585365853658537,24,14,0.5833333333333334,10,0,17,13,0.7647058823529411,4,0,14,14,1.0,1.0
+Microsoft365-Copilot,41,32,0.7804878048780488,0.5927152317880795,2,39,32,0.8205128205128205,24,16,0.6666666666666666,7,1,17,16,0.9411764705882353,0,1,16,16,1.0,1.0
+Gemini3.6-Flash,41,37,0.9024390243902439,0.8056872037914692,0,41,37,0.9024390243902439,24,20,0.8333333333333334,4,0,17,17,1.0,0,0,20,20,1.0,1.0

@@ -1,0 +1,53 @@
+{
+  "suite_id": "evidentiary-governance-e1",
+  "commands": [
+    {
+      "name": "e1-governance-comparison",
+      "argv": [
+        "python",
+        "-m",
+        "eg_runtime.e1_experiment",
+        "--config",
+        "configs/e1-governance-comparison.json",
+        "--output",
+        "results/e1-governance-comparison",
+        "--base-directory",
+        "."
+      ]
+    },
+    {
+      "name": "e1-governance-comparison-aggregate",
+      "argv": [
+        "python",
+        "-m",
+        "eg_runtime.e1_aggregate",
+        "--root",
+        "results/e1-governance-comparison"
+      ]
+    },
+    {
+      "name": "e1-governance-comparison-family-matrix",
+      "argv": [
+        "python",
+        "-m",
+        "eg_runtime.e1_family_matrix",
+        "--root",
+        "results/e1-governance-comparison"
+      ]
+    },
+    {
+      "name": "e1-governance-comparison-report",
+      "argv": [
+        "python",
+        "-m",
+        "eg_runtime.e1_report",
+        "--root",
+        "results/e1-governance-comparison",
+        "--config",
+        "configs/e1-governance-comparison.json",
+        "--output",
+        "results/e1-governance-comparison/e1-governance-comparison.md"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "experiment_id": "e2-llm-pilot",
+  "scenario_directory": "scenarios/canonical",
+  "scenario_ids": [
+    "data_classification_benign",
+    "data_classification_unsafe",
+    "approval_binding_benign",
+    "approval_binding_unsafe"
+  ],
+  "conditions": [
+    "c0_logging",
+    "c1_post_hoc",
+    "c2_action_level",
+    "c3_organizational"
+  ],
+  "repetitions": 1
+}

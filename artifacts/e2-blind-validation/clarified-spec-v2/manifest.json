@@ -1,0 +1,12 @@
+{
+  "version": "clarified-spec-v2",
+  "source": "artifacts/e2-blind-validation/blind_annotation_cases.jsonl",
+  "source_sha256": "61c5d1d00caec30a6a441911a0233759bdb09e6081257c55692b35f43621b0a4",
+  "selection_rule": "all cases whose sole predicate is purpose_match or cross_step_purpose_consistent",
+  "n_cases": 12,
+  "shuffle_seed": 20260911,
+  "runtime_labels_in_packet": false,
+  "original_annotations_in_packet": false,
+  "researcher_unblinded": true,
+  "annotators_blinded": true
+}

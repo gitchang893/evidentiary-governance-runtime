@@ -1,0 +1,228 @@
+{
+  "suite_id": "evidentiary-governance-canonical",
+  "commands": [
+    {
+      "name": "canonical-simulation",
+      "argv": [
+        "python",
+        "-m",
+        "eg_runtime.simulation",
+        "--scenarios",
+        "scenarios/canonical",
+        "--output",
+        "results/canonical-suite/artifacts/simulation"
+      ]
+    },
+    {
+      "name": "e1-governance-comparison",
+      "argv": [
+        "python",
+        "-m",
+        "eg_runtime.e1_experiment",
+        "--config",
+        "configs/e1-governance-comparison.json",
+        "--output",
+        "results/canonical-suite/artifacts/e1-governance-comparison",
+        "--base-directory",
+        "."
+      ]
+    },
+    {
+      "name": "e1-governance-comparison-aggregate",
+      "argv": [
+        "python",
+        "-m",
+        "eg_runtime.e1_aggregate",
+        "--root",
+        "results/canonical-suite/artifacts/e1-governance-comparison"
+      ]
+    },
+    {
+      "name": "e1-governance-comparison-family-matrix",
+      "argv": [
+        "python",
+        "-m",
+        "eg_runtime.e1_family_matrix",
+        "--root",
+        "results/canonical-suite/artifacts/e1-governance-comparison"
+      ]
+    },
+    {
+      "name": "e1-governance-comparison-report",
+      "argv": [
+        "python",
+        "-m",
+        "eg_runtime.e1_report",
+        "--root",
+        "results/canonical-suite/artifacts/e1-governance-comparison",
+        "--config",
+        "configs/e1-governance-comparison.json",
+        "--output",
+        "results/canonical-suite/artifacts/e1-governance-comparison/e1-governance-comparison.md"
+      ]
+    },
+    {
+      "name": "approval-simulation",
+      "argv": [
+        "python",
+        "-m",
+        "eg_runtime.approval_simulation",
+        "--scenarios",
+        "scenarios/canonical",
+        "--output",
+        "results/canonical-suite/artifacts/approval-workflows",
+        "--overwrite"
+      ]
+    },
+    {
+      "name": "approval-integrity",
+      "argv": [
+        "python",
+        "-m",
+        "eg_runtime.approval_integrity_experiment",
+        "--output",
+        "results/canonical-suite/artifacts/approval-integrity",
+        "--overwrite"
+      ]
+    },
+    {
+      "name": "artifact-footprint",
+      "argv": [
+        "python",
+        "-m",
+        "eg_runtime.artifact_footprint",
+        "--root",
+        "results/canonical-suite/artifacts/approval-integrity",
+        "--json-output",
+        "results/canonical-suite/artifacts/approval-integrity/artifact_inventory.json",
+        "--csv-output",
+        "results/canonical-suite/artifacts/approval-integrity/artifact_inventory.csv",
+        "--root-label",
+        "approval-integrity"
+      ]
+    },
+    {
+      "name": "retention-experiment",
+      "argv": [
+        "python",
+        "-m",
+        "eg_runtime.retention_experiment",
+        "--inventory",
+        "results/canonical-suite/artifacts/approval-integrity/artifact_inventory.json",
+        "--output",
+        "results/canonical-suite/artifacts/approval-retention",
+        "--overwrite"
+      ]
+    },
+    {
+      "name": "retention-export-create-baseline-only",
+      "argv": [
+        "python",
+        "-m",
+        "eg_runtime.retention_export",
+        "create",
+        "--source-root",
+        "results/canonical-suite/artifacts/approval-integrity",
+        "--inventory",
+        "results/canonical-suite/artifacts/approval-integrity/artifact_inventory.json",
+        "--retention-manifest",
+        "results/canonical-suite/artifacts/approval-retention/baseline_only/retention_manifest.json",
+        "--output",
+        "results/canonical-suite/artifacts/approval-retention-exports/baseline_only",
+        "--overwrite"
+      ]
+    },
+    {
+      "name": "retention-export-verify-baseline-only",
+      "argv": [
+        "python",
+        "-m",
+        "eg_runtime.retention_export",
+        "verify",
+        "--export",
+        "results/canonical-suite/artifacts/approval-retention-exports/baseline_only",
+        "--inventory",
+        "results/canonical-suite/artifacts/approval-integrity/artifact_inventory.json",
+        "--retention-manifest",
+        "results/canonical-suite/artifacts/approval-retention/baseline_only/retention_manifest.json"
+      ]
+    },
+    {
+      "name": "retention-export-create-full",
+      "argv": [
+        "python",
+        "-m",
+        "eg_runtime.retention_export",
+        "create",
+        "--source-root",
+        "results/canonical-suite/artifacts/approval-integrity",
+        "--inventory",
+        "results/canonical-suite/artifacts/approval-integrity/artifact_inventory.json",
+        "--retention-manifest",
+        "results/canonical-suite/artifacts/approval-retention/full/retention_manifest.json",
+        "--output",
+        "results/canonical-suite/artifacts/approval-retention-exports/full",
+        "--overwrite"
+      ]
+    },
+    {
+      "name": "retention-export-verify-full",
+      "argv": [
+        "python",
+        "-m",
+        "eg_runtime.retention_export",
+        "verify",
+        "--export",
+        "results/canonical-suite/artifacts/approval-retention-exports/full",
+        "--inventory",
+        "results/canonical-suite/artifacts/approval-integrity/artifact_inventory.json",
+        "--retention-manifest",
+        "results/canonical-suite/artifacts/approval-retention/full/retention_manifest.json"
+      ]
+    },
+    {
+      "name": "retention-export-create-research-minimal",
+      "argv": [
+        "python",
+        "-m",
+        "eg_runtime.retention_export",
+        "create",
+        "--source-root",
+        "results/canonical-suite/artifacts/approval-integrity",
+        "--inventory",
+        "results/canonical-suite/artifacts/approval-integrity/artifact_inventory.json",
+        "--retention-manifest",
+        "results/canonical-suite/artifacts/approval-retention/research_minimal/retention_manifest.json",
+        "--output",
+        "results/canonical-suite/artifacts/approval-retention-exports/research_minimal",
+        "--overwrite"
+      ]
+    },
+    {
+      "name": "retention-export-verify-research-minimal",
+      "argv": [
+        "python",
+        "-m",
+        "eg_runtime.retention_export",
+        "verify",
+        "--export",
+        "results/canonical-suite/artifacts/approval-retention-exports/research_minimal",
+        "--inventory",
+        "results/canonical-suite/artifacts/approval-integrity/artifact_inventory.json",
+        "--retention-manifest",
+        "results/canonical-suite/artifacts/approval-retention/research_minimal/retention_manifest.json"
+      ]
+    },
+    {
+      "name": "retention-export-integrity",
+      "argv": [
+        "python",
+        "-m",
+        "eg_runtime.retention_export_experiment",
+        "--output",
+        "results/canonical-suite/artifacts/retention-export-integrity",
+        "--overwrite"
+      ]
+    }
+  ]
+}

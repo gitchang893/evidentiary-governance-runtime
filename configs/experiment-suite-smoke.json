@@ -1,0 +1,104 @@
+{
+  "suite_id": "evidentiary-governance-smoke",
+  "commands": [
+    {
+      "name": "canonical-simulation-help",
+      "argv": [
+        "python",
+        "-m",
+        "eg_runtime.simulation",
+        "--help"
+      ]
+    },
+    {
+      "name": "e1-governance-comparison-help",
+      "argv": [
+        "python",
+        "-m",
+        "eg_runtime.e1_experiment",
+        "--help"
+      ]
+    },
+    {
+      "name": "e1-governance-comparison-aggregate-help",
+      "argv": [
+        "python",
+        "-m",
+        "eg_runtime.e1_aggregate",
+        "--help"
+      ]
+    },
+    {
+      "name": "e1-governance-comparison-family-matrix-help",
+      "argv": [
+        "python",
+        "-m",
+        "eg_runtime.e1_family_matrix",
+        "--help"
+      ]
+    },
+    {
+      "name": "e1-governance-comparison-report-help",
+      "argv": [
+        "python",
+        "-m",
+        "eg_runtime.e1_report",
+        "--help"
+      ]
+    },
+    {
+      "name": "approval-simulation-help",
+      "argv": [
+        "python",
+        "-m",
+        "eg_runtime.approval_simulation",
+        "--help"
+      ]
+    },
+    {
+      "name": "approval-integrity-help",
+      "argv": [
+        "python",
+        "-m",
+        "eg_runtime.approval_integrity_experiment",
+        "--help"
+      ]
+    },
+    {
+      "name": "retention-experiment-help",
+      "argv": [
+        "python",
+        "-m",
+        "eg_runtime.retention_experiment",
+        "--help"
+      ]
+    },
+    {
+      "name": "retention-export-help",
+      "argv": [
+        "python",
+        "-m",
+        "eg_runtime.retention_export",
+        "--help"
+      ]
+    },
+    {
+      "name": "retention-export-integrity-help",
+      "argv": [
+        "python",
+        "-m",
+        "eg_runtime.retention_export_experiment",
+        "--help"
+      ]
+    },
+    {
+      "name": "artifact-footprint-help",
+      "argv": [
+        "python",
+        "-m",
+        "eg_runtime.artifact_footprint",
+        "--help"
+      ]
+    }
+  ]
+}

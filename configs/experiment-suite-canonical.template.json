@@ -1,0 +1,115 @@
+{
+  "suite_id": "evidentiary-governance-canonical",
+  "commands": [
+    {
+      "name": "canonical-simulation",
+      "argv": [
+        "python",
+        "-m",
+        "eg_runtime.simulation"
+      ]
+    },
+    {
+      "name": "e1-governance-comparison",
+      "argv": [
+        "python",
+        "-m",
+        "eg_runtime.e1_experiment",
+        "--output",
+        "__E1_GOVERNANCE_COMPARISON_OUTPUT__"
+      ]
+    },
+    {
+      "name": "e1-governance-comparison-aggregate",
+      "argv": [
+        "python",
+        "-m",
+        "eg_runtime.e1_aggregate",
+        "--root",
+        "__E1_GOVERNANCE_COMPARISON_AGGREGATE_ROOT__"
+      ]
+    },
+    {
+      "name": "e1-governance-comparison-family-matrix",
+      "argv": [
+        "python",
+        "-m",
+        "eg_runtime.e1_family_matrix",
+        "--root",
+        "__E1_GOVERNANCE_COMPARISON_FAMILY_MATRIX_ROOT__"
+      ]
+    },
+    {
+      "name": "e1-governance-comparison-report",
+      "argv": [
+        "python",
+        "-m",
+        "eg_runtime.e1_report",
+        "--root",
+        "__E1_GOVERNANCE_COMPARISON_REPORT_ROOT__",
+        "--output",
+        "__E1_GOVERNANCE_COMPARISON_REPORT_OUTPUT__"
+      ]
+    },
+    {
+      "name": "approval-simulation",
+      "argv": [
+        "python",
+        "-m",
+        "eg_runtime.approval_simulation",
+        "--output",
+        "__APPROVAL_SIMULATION_OUTPUT__"
+      ]
+    },
+    {
+      "name": "approval-integrity",
+      "argv": [
+        "python",
+        "-m",
+        "eg_runtime.approval_integrity_experiment",
+        "--output",
+        "__APPROVAL_INTEGRITY_OUTPUT__"
+      ]
+    },
+    {
+      "name": "retention-experiment",
+      "argv": [
+        "python",
+        "-m",
+        "eg_runtime.retention_experiment",
+        "--inventory",
+        "__RETENTION_EXPERIMENT_INVENTORY__",
+        "--output",
+        "__RETENTION_EXPERIMENT_OUTPUT__"
+      ]
+    },
+    {
+      "name": "retention-export",
+      "argv": [
+        "python",
+        "-m",
+        "eg_runtime.retention_export"
+      ]
+    },
+    {
+      "name": "retention-export-integrity",
+      "argv": [
+        "python",
+        "-m",
+        "eg_runtime.retention_export_experiment",
+        "--output",
+        "__RETENTION_EXPORT_INTEGRITY_OUTPUT__"
+      ]
+    },
+    {
+      "name": "artifact-footprint",
+      "argv": [
+        "python",
+        "-m",
+        "eg_runtime.artifact_footprint",
+        "--root",
+        "__ARTIFACT_FOOTPRINT_ROOT__"
+      ]
+    }
+  ]
+}
